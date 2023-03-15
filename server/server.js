@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const creatureRouter = require('./routes/creature.router.js');
 const PORT = process.env.PORT || 5012;
+//! If you change this port you must update the package.json
 
 /** ---------- MIDDLEWARE ---------- **/
 app.use(bodyParser.json()); // needed for axios requests
